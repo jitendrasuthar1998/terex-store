@@ -1,0 +1,20 @@
+.label, .label-range {
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+}
+.input-group {
+    margin-bottom: 2rem;
+    border: 1px solid red;
+}
+
+@media screen and (max-width: 900px) {
+    .filter-panel{
+        display: none;
+    }
+}
+
+@media screen and (min-width > 360px) {
+    .filter-panel{
+        display: block;
+    }
+}
