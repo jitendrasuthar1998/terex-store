@@ -1,10 +1,11 @@
 import { Grid } from '@mui/material'
 import React, { useEffect, useState } from 'react'
 import products from '../products.json'
-import CheckBoxProton from './CheckBoxProton'
+import CheckBoxProton from '../components/CheckBoxProton'
 import SearchBar from '../components/SearchBar'
 
 import './home.css'
+import Header from '../components/Header'
 
 const Home = () => {
 
@@ -117,6 +118,7 @@ const Home = () => {
 
     return (
         <>
+        <Header/>
         <SearchBar value={inputText} changeInput={e => setInputText(e.target.value)}/>
         
 
