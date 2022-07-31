@@ -4,7 +4,7 @@
 }
 .input-group {
     margin-bottom: 2rem;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 @media screen and (max-width: 900px) {

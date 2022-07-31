@@ -1,19 +1,15 @@
 import './App.css';
-import ResponsiveComponent from './bootstrapPractice/ResponsiveComponent';
-import Header from './components/Header';
 import Home from './pages/Home';
 import {BrowserRouter, Route, Switch} from 'react-router-dom'
 import Cart from './pages/Cart';
+import { Provider } from 'react-redux';
+
+import store from './redux/store'
 
 function App() {
   return (
-    // <div className="App">
-    
-    //   <Home/>
-
-
-    // </div>
-    <BrowserRouter>
+    <Provider store={store}>
+      <BrowserRouter>
     <Switch>
       <Route path="/" exact>
         <Home/>
@@ -23,6 +19,7 @@ function App() {
       </Route>
     </Switch>
     </BrowserRouter>
+    </Provider>
   );
 }
 
